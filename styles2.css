@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f9; /* Color de fondo */
+}
+
+form {
+    background: #fff; /* Fondo blanco del formulario */
+    padding: 20px; /* Espaciado interno */
+    max-width: 400px; /* Ancho máximo */
+    margin: 50px auto; /* Centra el formulario vertical y horizontalmente */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2); /* Sombra */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px; /* Espaciado entre etiquetas */
+}
+
+input, button {
+    width: 100%; /* Ocupa todo el ancho del formulario */
+    padding: 10px; /* Espaciado interno */
+    margin: 5px 0; /* Espaciado entre campos */
+    box-sizing: border-box; /* No desborda el tamaño del formulario */
+}
+
+button {
+    background: #0078D7; /* Color azul del botón */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cursor tipo puntero */
+}
+
+button:hover {
+    background: #005bb5; /* Cambio de color al pasar el ratón */
+}

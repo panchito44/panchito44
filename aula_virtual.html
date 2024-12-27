@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Virtual</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Cambiar color azul por uno más cálido */
+        .bg-primary {
+            background-color: #7dcea0 !important;
+        }
+        .btn-primary {
+            background-color: #FF8A65 !important;
+            border-color: #FF8A65 !important;
+        }
+        .btn-primary:hover {
+            background-color: #FF7043 !important;
+            border-color: #FF7043 !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Aula Virtual</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#clases">Clases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#progreso">Mi Progreso</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Botón de Cerrar Sesión -->
+            <form action="logout.php" method="POST" class="d-flex">
+                <button type="submit" class="btn btn-danger">Cerrar Sesión</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="bg-primary text-white text-center py-5">
+        <h1>Aula Virtual</h1>
+        <p>Bienvenido al aula virtual, selecciona tu clase para acceder al contenido.</p>
+    </header>
+
+    <!-- Índice de Clases -->
+    <section id="clases" class="container py-5">
+        <h2 class="text-center mb-4">Índice de Clases</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Clase 1: Introducción a Microcontroladores</h5>
+                        <a href="#clase1" class="btn btn-primary">Ver Contenido</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Clase 2: Programación Básica en Arduino</h5>
+                        <a href="#clase2" class="btn btn-primary">Ver Contenido</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Clase 3: Configuración de Atmel</h5>
+                        <a href="#clase3" class="btn btn-primary">Ver Contenido</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Clase 4: Introducción a IoT con ESP32</h5>
+                        <a href="#clase4" class="btn btn-primary">Ver Contenido</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido de las Clases -->
+    <section id="clase1" class="container py-5">
+        <h2>Clase 1: Introducción a Microcontroladores</h2>
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_1" title="Introducción a Microcontroladores" allowfullscreen></iframe>
+        </div>
+        <h3>Material de la clase</h3>
+        <a href="materiales/clase1_microcontroladores.pdf" class="btn btn-secondary" target="_blank">Descargar PDF</a>
+        <a href="archivos/clase1_codigo.zip" class="btn btn-secondary" download>Descargar Código Fuente</a>
+    </section>
+
+    <section id="clase2" class="container py-5">
+        <h2>Clase 2: Programación Básica en Arduino</h2>
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_2" title="Programación Básica en Arduino" allowfullscreen></iframe>
+        </div>
+        <h3>Material de la clase</h3>
+        <a href="materiales/clase2_arduino.pdf" class="btn btn-secondary" target="_blank">Descargar PDF</a>
+        <a href="archivos/clase2_codigo.zip" class="btn btn-secondary" download>Descargar Código Fuente</a>
+    </section>
+
+    <section id="clase3" class="container py-5">
+        <h2>Clase 3: Configuración de Atmel</h2>
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_3" title="Configuración de Atmel" allowfullscreen></iframe>
+        </div>
+        <h3>Material de la clase</h3>
+        <a href="materiales/clase3_atmel.pdf" class="btn btn-secondary" target="_blank">Descargar PDF</a>
+        <a href="archivos/clase3_codigo.zip" class="btn btn-secondary" download>Descargar Código Fuente</a>
+    </section>
+
+    <section id="clase4" class="container py-5">
+        <h2>Clase 4: Introducción a IoT con ESP32</h2>
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_4" title="Introducción a IoT con ESP32" allowfullscreen></iframe>
+        </div>
+        <h3>Material de la clase</h3>
+        <a href="materiales/clase4_esp32.pdf" class="btn btn-secondary" target="_blank">Descargar PDF</a>
+        <a href="archivos/clase4_codigo.zip" class="btn btn-secondary" download>Descargar Código Fuente</a>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Aula Virtual <a href="#" class="text-white"></a>  <a href="#" class="text-white"></a></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
