@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Virtual</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Cambiar color azul por uno más cálido */
+        .bg-primary {
+            background-color: #7dcea0 !important;
+        }
+        .btn-primary {
+            background-color: #FF8A65 !important;
+            border-color: #FF8A65 !important;
+        }
+        .btn-primary:hover {
+            background-color: #FF7043 !important;
+            border-color: #FF7043 !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Aula Virtual</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#clases">Clases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#progreso">Mi Progreso</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Botón de Cerrar Sesión -->
+            <form action="logout.php" method="POST" class="d-flex">
+                <button type="submit" class="btn btn-danger">Cerrar Sesión</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="bg-primary text-white text-center py-5 d-flex align-items-center justify-content-center">
+        <h1 class="mb-0 me-3">TECH LAB ACADEMY ELECTRONIKA</h1>
+        <img src="imagenes/Logo.png" alt="Tech Lab Academy Logo" style="max-width: 150px; height: auto;">
+    </header>
+    
+   <!-- Índice de Clases -->
+    <section id="clases" class="container py-5">
+        <h2 class="text-center mb-4">Índice de Clases</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-3">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Clase 1: Introduccion ala electronica basica y plataforma arduino</h5>
+                        <a href="#clase1" class="btn btn-primary">Ver Contenido</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Clase 2: Señales Digitales </h5>
+                        <a href="#clase2" class="btn btn-primary">Ver Contenido</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Clase 3: Señales Analógicas</h5>
+                        <a href="#clase3" class="btn btn-primary">Ver Contenido</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Clase 4: Control de motor DC</h5>
+                        <a href="#clase4" class="btn btn-primary">Ver Contenido</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Clase 5: Sensor I</h5>
+                        <a href="#clase5" class="btn btn-primary">Ver Contenido</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Clase 6: Pantalla LCD</h5>
+                        <a href="#clase6" class="btn btn-primary">Ver Contenido</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Clase 7: Comunicacion Serial</h5>
+                        <a href="#clase7" class="btn btn-primary">Ver Contenido</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Clase 8: Conexión Bluethon</h5>
+                        <a href="#clase8" class="btn btn-primary">Ver Contenido</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Clase 9: LCD y Ultrasonido </h5>
+                        <a href="#clase9" class="btn btn-primary">Ver Contenido</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Clase 10: Sensor II</h5>
+                        <a href="#clase10" class="btn btn-primary">Ver Contenido</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Clase 11: Proyecto Final </h5>
+                        <a href="#clase11" class="btn btn-primary">Ver Contenido</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido de las Clases -->
+    <section id="clase1" class="container py-5">
+        <h2>Clase 1: Introduccion ala electronica básica y plataforma arduino</h2>
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_1" title="Introducción a Microcontroladores" allowfullscreen></iframe>
+        </div>
+        <h3>Material de la clase</h3>
+        <a href="archivos/clases/TEMA 1 INTRODUCCION.pdf" class="btn btn-secondary" target="_blank">Descargar PDF</a>
+        <a href="archivos/simulaciones/clase1/clase1_simu.zip" class="btn btn-secondary" download>Simulacion</a>
+        <a href="archivos/codigos/c_clase1/clase1_codigo.zip" class="btn btn-secondary" download>Código Fuente</a>
+    </section>
+
+    <section id="clase2" class="container py-5">
+        <h2>Clase 2: Señales Digitales</h2>
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_2" title="Programación Básica en Arduino" allowfullscreen></iframe>
+        </div>
+        <h3>Material de la clase</h3>
+        <a href="archivos/clases/TEMA 2 ENTRADAS Y SALIDAS DIGITALES.pdf" class="btn btn-secondary" target="_blank">Descargar PDF</a>
+        <a href="archivos/simulaciones/clase2/clase2_simu.zip" class="btn btn-secondary" download>Simulacion</a>
+        <a href="archivos/codigos/c_clase2/clase2_codigo.zip" class="btn btn-secondary" download>Código Fuente</a>
+    </section>
+
+    <section id="clase3" class="container py-5">
+        <h2>Clase 3: Señales Analógicas</h2>
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_3" title="Configuración de Atmel" allowfullscreen></iframe>
+        </div>
+        <h3>Material de la clase</h3>
+        <a href="archivos/clases/TEMA 3 ENTRADAS Y SALIDAS ANALÓGICAS  PWM.pdf" class="btn btn-secondary" target="_blank">Descargar PDF</a>
+        <a href="archivos/simulaciones/clase3/clase3_simu.zip" class="btn btn-secondary" download>Simulacion</a>
+        <a href="archivos/codigos/c_clase3/clase3_codigo.zip" class="btn btn-secondary" download>Código Fuente</a>
+    </section>
+
+    <section id="clase4" class="container py-5">
+        <h2>Clase 4: Control de motor DC</h2>
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_4" title="Introducción a IoT con ESP32" allowfullscreen></iframe>
+        </div>
+        <h3>Material de la clase</h3>
+        <a href="archivos/clases/TEMA 4 CONTROL MOTOR DC.pdf" class="btn btn-secondary" target="_blank">Descargar PDF</a>
+        <a href="archivos/simulaciones/clase4/clase4_simu.zip" class="btn btn-secondary" download>Simulacion</a>
+        <a href="archivos/codigos/c_clase4/clase4_codigo.zip" class="btn btn-secondary" download>Código Fuente</a>
+    </section>
+
+    <section id="clase5" class="container py-5">
+        <h2>Clase 5: Sensor I</h2>
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_4" title="Introducción a IoT con ESP32" allowfullscreen></iframe>
+        </div>
+        <h3>Material de la clase</h3>
+        <a href="archivos/clases/TEMA 5 SENSORES DE ARDUINO.pdf" class="btn btn-secondary" target="_blank">Descargar PDF</a>
+        <a href="archivos/simulaciones/clase5/clase5_simu.zip" class="btn btn-secondary" download>Simulacion</a>
+        <a href="archivos/codigos/c_clase5/clase5_codigo.zip" class="btn btn-secondary" download>Código Fuente</a>
+    </section>
+
+    <section id="clase6" class="container py-5">
+        <h2>Clase 6: Pantalla LCD</h2>
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_4" title="Introducción a IoT con ESP32" allowfullscreen></iframe>
+        </div>
+        <h3>Material de la clase</h3>
+        <a href="archivos/clases/TEMA 6 ARDUINO Y PANTALLA LCD.pdf" class="btn btn-secondary" target="_blank">Descargar PDF</a>
+        <a href="archivos/simulaciones/clase6/clase6_simu.zip" class="btn btn-secondary" download>Simulacion</a>
+        <a href="archivos/codigos/c_clase6/clase6_codigo.zip" class="btn btn-secondary" download>Código Fuente</a>
+    </section>
+
+    <section id="clase7" class="container py-5">
+        <h2>Clase 7: Comunicacion Serial</h2>
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_4" title="Introducción a IoT con ESP32" allowfullscreen></iframe>
+        </div>
+        <h3>Material de la clase</h3>
+        <a href="archivos/clases/TEMA 7 COMUNICACIÓN SERIAL CON ARDUINO UNO.pdf" class="btn btn-secondary" target="_blank">Descargar PDF</a>
+        <a href="archivos/simulaciones/clase7/clase7_simu.zip" class="btn btn-secondary" download>Simulacion</a>
+        <a href="archivos/codigos/c_clase7/clase7_codigo.zip" class="btn btn-secondary" download>Código Fuente</a>
+    </section>
+
+    <section id="clase8" class="container py-5">
+        <h2>Clase 8: Conexión Bluethon</h2>
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_4" title="Introducción a IoT con ESP32" allowfullscreen></iframe>
+        </div>
+        <h3>Material de la clase</h3>
+        <a href="archivos/clases/TEMA 8 COMUNICACIÓN CON BLUETOOTH.pdf" class="btn btn-secondary" target="_blank">Descargar PDF</a>
+        <a href="archivos/simulaciones/clase8/clase8_simu.zip" class="btn btn-secondary" download>Simulacion</a>
+        <a href="archivos/codigos/c_clase8/clase8_codigo.zip" class="btn btn-secondary" download>Código Fuente</a>
+    </section>
+
+    <section id="clase9" class="container py-5">
+        <h2>Clase 9: LCD y Ultrasonido</h2>
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_4" title="Introducción a IoT con ESP32" allowfullscreen></iframe>
+        </div>
+        <h3>Material de la clase</h3>
+        <a href="archivos/clases/TEMA 9 SENSOR DE ULTRASONIDO PANTALLA LCD 2X16.pdf" class="btn btn-secondary" target="_blank">Descargar PDF</a>
+        <a href="archivos/simulaciones/clase9/clase9_simu.zip" class="btn btn-secondary" download>Simulacion</a>
+        <a href="archivos/codigos/c_clase9/clase9_codigo.zip" class="btn btn-secondary" download>Código Fuente</a>
+    </section>
+
+    <section id="clase10" class="container py-5">
+        <h2>Clase 10: Sensor II</h2>
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_4" title="Introducción a IoT con ESP32" allowfullscreen></iframe>
+        </div>
+        <h3>Material de la clase</h3>
+        <a href="archivos/clases/TEMA 10 PROYECTOS INTERMEDIOS.pdf" class="btn btn-secondary" target="_blank">Descargar PDF</a>
+        <a href="archivos/simulaciones/clase10/clase10_simu.zip" class="btn btn-secondary" download>Simulacion</a>
+        <a href="archivos/codigos/c_clase10/clase10_codigo.zip" class="btn btn-secondary" download>Código Fuente</a>
+    </section>
+
+    <section id="clase11" class="container py-5">
+        <h2>Clase 11: Proyecto Final</h2>
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_4" title="Introducción a IoT con ESP32" allowfullscreen></iframe>
+        </div>
+        <h3>Material de la clase</h3>
+        <a href="archivos/clases/TEMA 11 ARDUINO Y ROBOT BLUETOOTH.pdf" class="btn btn-secondary" target="_blank">Descargar PDF</a>
+        <a href="archivos/simulaciones/clase11/clase11_simu.zip" class="btn btn-secondary" download>Simulacion</a>
+        <a href="archivos/codigos/c_clase11/clase11_codigo.zip" class="btn btn-secondary" download>Código Fuente</a>
+    </section>
+     
+    
+    
+    
+    
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Aula Virtual <a href="#" class="text-white"></a>  <a href="#" class="text-white"></a></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
